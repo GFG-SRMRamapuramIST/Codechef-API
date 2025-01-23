@@ -6,7 +6,7 @@ This API provides various endpoints to fetch user data and stats from CodeChef.
 
 ## Live API Link
 
-The API can be accessed at: **[Live API Endpoint](#)** (replace `#` with the actual link).
+The API can be accessed at: **[Live API Endpoint](https://codechef-api-9jml.onrender.com/)**.
 
 ---
 
