@@ -30,8 +30,11 @@ router.get("/", (req, res) => {
     },
     {
       route: "/api/contest-data/:username",
-      method: "GET",
+      method: "POST",
       description: "Fetches the contest data from CodeChef by username.",
+      parameters: {
+        contestName: "Name of the contest to fetch data.",
+      },
     },
   ];
 
@@ -51,6 +54,6 @@ router.get("/api/heat-map/:username", heatMap);
 router.get("/api/rating-graph/:username", ratingGraph);
 
 // User Contest Data
-router.get("/api/contest-data/:username", contestData);
+router.post("/api/contest-data/:username", contestData);
 
 module.exports = router;
