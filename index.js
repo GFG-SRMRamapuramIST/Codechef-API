@@ -12,6 +12,9 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
+// Keep-Alive Ping
+require("./KeepAliveScheduler")
+
 // Scraper Routes
 app.use(router);
 
